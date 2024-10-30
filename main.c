@@ -134,12 +134,3 @@ int wget_https(const char* server, char* buffer, int buff_size, Http_Args args) 
     return 0;
 }
 
-
-int main() {
-    char buffer[50000];
-    Http_Args args;
-    wget_https("learn.microsoft.com/en-us/", buffer, 50000, args);
-    printf("%i", get_status_code(buffer));
-    return 0;
-
-}
